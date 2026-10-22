@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "description": "Agent-first navigation for selected reviewed public principal results; not an exhaustive declaration catalog.",
+  "usage": [
+    "Use lean_module for a focused import and lean_declaration as the exact fully qualified name.",
+    "Read the complete Lean declaration type and all hypotheses before using a result; a title is not a theorem statement.",
+    "Read the complete reviewed mathematical statement on the corresponding documentation page.",
+    "lean_source and bibliography are repository-relative paths; documentation_route is relative to the catalog root.",
+    "This derived navigation index is not an authority for theorem scope, review or proof status."
+  ],
+  "bibliography": "REFERENCES.json",
+  "results": [
+    {
+      "id": "knill-laflamme-iff-correctability",
+      "title": "Knill-Laflamme criterion for a finite Kraus channel",
+      "domain": "Semantics",
+      "lean_module": "QEC.Semantics.ErrorCorrection.KLRecovery",
+      "lean_declaration": "QEC.Semantics.FiniteKrausFamily.matrixElementKnillLaflamme_iff_exists_correctingQuantumChannel",
+      "lean_source": "QEC/Semantics/ErrorCorrection/KLRecovery.lean",
+      "documentation_route": "theorems/knill-laflamme-iff-correctability/",
+      "citation_keys": [
+        "KL96"
+      ]
+    },
+    {
+      "id": "clbt-protected-observable-decay",
+      "title": "CLBT protected-observable decay theorem",
+      "domain": "Semantics",
+      "lean_module": "QEC.Semantics.Dynamics.ProtectedObservableDecay",
+      "lean_declaration": "QEC.Semantics.clbtProtectedObservableDecay",
+      "lean_source": "QEC/Semantics/Dynamics/ProtectedObservableDecay.lean",
+      "documentation_route": "theorems/clbt-protected-observable-decay/",
+      "citation_keys": [
+        "CLBT10"
+      ]
+    },
+    {
+      "id": "stable-syndrome-lifetime-bridge",
+      "title": "Stable-syndrome quantitative storage bridge",
+      "domain": "Semantics",
+      "lean_module": "QEC.Semantics.Dynamics.StableSyndromeLifetime",
+      "lean_declaration": "QEC.Semantics.stableSyndromeLifetimeBridge",
+      "lean_source": "QEC/Semantics/Dynamics/StableSyndromeLifetime.lean",
+      "documentation_route": "theorems/stable-syndrome-lifetime-bridge/",
+      "citation_keys": [
+        "CLBT10"
+      ]
+    },
+    {
+      "id": "chain-complex-css-homological-distance",
+      "title": "Chain-complex CSS homological distance",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.Stabilizer.PauliSemantics",
+      "lean_declaration": "QEC.Coding.ChainComplexData.binaryCSSCode_homologicalDistance",
+      "lean_source": "QEC/Coding/Stabilizer/PauliSemantics.lean",
+      "documentation_route": "theorems/chain-complex-css-homological-distance/",
+      "citation_keys": [
+        "BE20"
+      ]
+    },
+    {
+      "id": "stabilizer-detectable-error-characterization",
+      "title": "Stabilizer detectable-error characterization",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.Stabilizer.Detectability",
+      "lean_declaration": "QEC.Coding.StabilizerCode.detectableOn_toQubitOperator_iff_inGeneratedGroupUpToSign_or_not_inBinaryNormalizer",
+      "lean_source": "QEC/Coding/Stabilizer/Detectability.lean",
+      "documentation_route": "theorems/stabilizer-detectable-error-characterization/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "binary-css-checks-commute-iff-dual-containment",
+      "title": "Binary CSS checks commute iff dual containment",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.Stabilizer.PauliSemantics",
+      "lean_declaration": "QEC.Coding.PauliSymplectic.binaryCSSCheckSet_pairwise_commutes_iff_dual_le",
+      "lean_source": "QEC/Coding/Stabilizer/PauliSemantics.lean",
+      "documentation_route": "theorems/binary-css-checks-commute-iff-dual-containment/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "stabilizer-error-set-correctability-criterion",
+      "title": "Finite Pauli-Kraus channel correctability criterion",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.Stabilizer.Correctability",
+      "lean_declaration": "QEC.Coding.StabilizerCode.exists_finiteKrausCorrectable_iff_pairProductCriterion_on_support",
+      "lean_source": "QEC/Coding/Stabilizer/Correctability.lean",
+      "documentation_route": "theorems/stabilizer-error-set-correctability-criterion/",
+      "citation_keys": [
+        "Gott97",
+        "KL96"
+      ]
+    },
+    {
+      "id": "stabilizer-distance-normalizer-characterization",
+      "title": "Stabilizer distance-normalizer characterization",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.Stabilizer.Distance",
+      "lean_declaration": "QEC.Coding.StabilizerCode.semanticStabilizerDistance_iff_minWeight_inBinaryNormalizer_diff",
+      "lean_source": "QEC/Coding/Stabilizer/Distance.lean",
+      "documentation_route": "theorems/stabilizer-distance-normalizer-characterization/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "css-stabilizer-from-parity-checks",
+      "title": "CSS stabilizer code from parity checks",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.CSS.ParityChecks",
+      "lean_declaration": "QEC.Coding.PauliSymplectic.binaryCSSStabilizerCodeOfParityChecks_spec",
+      "lean_source": "QEC/Coding/CSS/ParityChecks.lean",
+      "documentation_route": "theorems/css-stabilizer-from-parity-checks/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "stabilizer-degeneracy-below-distance-characterization",
+      "title": "Stabilizer degeneracy below distance characterization",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.Stabilizer.Degeneracy",
+      "lean_declaration": "QEC.Coding.StabilizerCode.semanticallyDegenerateAtDistance_iff_exists_generatedGroupUpToSign",
+      "lean_source": "QEC/Coding/Stabilizer/Degeneracy.lean",
+      "documentation_route": "theorems/stabilizer-degeneracy-below-distance-characterization/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "stabilizer-syndrome-map-laws",
+      "title": "Stabilizer syndrome map laws",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.Stabilizer.PauliSemantics",
+      "lean_declaration": "QEC.Coding.PauliSymplectic.stabilizerSyndrome_map_properties",
+      "lean_source": "QEC/Coding/Stabilizer/PauliSemantics.lean",
+      "documentation_route": "theorems/stabilizer-syndrome-map-laws/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "chain-complex-css-family-ldpc",
+      "title": "Uniform chain-complex CSS row checks witness stabilizer-family LDPC",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.QLDPC.SourceValidity",
+      "lean_declaration": "QEC.QLDPC.chainComplexCSSFamily_isLDPC_of_uniform_row_bounds",
+      "lean_source": "QEC/Coding/QLDPC/SourceValidity.lean",
+      "documentation_route": "theorems/chain-complex-css-family-ldpc/",
+      "citation_keys": [
+        "BE20"
+      ]
+    },
+    {
+      "id": "stabilizer-nondegenerate-correctable-syndrome-injective",
+      "title": "Bounded nondegenerate correctable-error syndrome injectivity",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.Stabilizer.SyndromeInjectivity",
+      "lean_declaration": "QEC.Coding.StabilizerCode.stabilizerSyndrome_injectiveUpToSign_of_correctable_nondegenerate",
+      "lean_source": "QEC/Coding/Stabilizer/SyndromeInjectivity.lean",
+      "documentation_route": "theorems/stabilizer-nondegenerate-correctable-syndrome-injective/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "css-quantum-classical-syndrome-bridge",
+      "title": "CSS quantum/classical syndrome equality",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.CSS.Syndrome",
+      "lean_declaration": "QEC.Coding.PauliSymplectic.binaryCSSSyndrome_eq_classicalSyndromes",
+      "lean_source": "QEC/Coding/CSS/Syndrome.lean",
+      "documentation_route": "theorems/css-quantum-classical-syndrome-bridge/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "css-componentwise-finite-family-knill-laflamme",
+      "title": "Componentwise CSS finite-family Knill-Laflamme",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.CSS.Correctability",
+      "lean_declaration": "QEC.Coding.PauliSymplectic.binaryCSSParityChecks_sameSpaceKnillLaflammeCriterion_of_componentwiseSyndromeInjective",
+      "lean_source": "QEC/Coding/CSS/Correctability.lean",
+      "documentation_route": "theorems/css-componentwise-finite-family-knill-laflamme/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "css-componentwise-xz-y-correction",
+      "title": "CSS componentwise X/Z/Y correction from classical codes",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.CSS.Correctability",
+      "lean_declaration": "QEC.Coding.PauliSymplectic.binaryCSSParityChecks_exists_finiteKrausCorrectable_of_componentwiseSyndromeInjective",
+      "lean_source": "QEC/Coding/CSS/Correctability.lean",
+      "documentation_route": "theorems/css-componentwise-xz-y-correction/",
+      "citation_keys": [
+        "Gott97",
+        "KL96"
+      ]
+    },
+    {
+      "id": "css-stabilizer-distance-min-logical-distances",
+      "title": "CSS stabilizer distance is the minimum logical-sector distance",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.CSS.Distance",
+      "lean_declaration": "QEC.Coding.StabilizerCode.binaryCSSStabilizerDistance_eq_min_logicalDistances",
+      "lean_source": "QEC/Coding/CSS/Distance.lean",
+      "documentation_route": "theorems/css-stabilizer-distance-min-logical-distances/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "css-distance-min-classical-distances-strict-purity",
+      "title": "CSS distance is the minimum ordinary classical distance under strict purity",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.CSS.Distance",
+      "lean_declaration": "QEC.Coding.StabilizerCode.binaryCSSStabilizerDistance_eq_min_classicalDistances_of_strictPurity",
+      "lean_source": "QEC/Coding/CSS/Distance.lean",
+      "documentation_route": "theorems/css-distance-min-classical-distances-strict-purity/",
+      "citation_keys": [
+        "Gott97"
+      ]
+    },
+    {
+      "id": "lz22-asymptotically-good-quantum-tanner",
+      "title": "Conditional LZ22 asymptotically good Quantum Tanner codes",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.QuantumTanner.ArithmeticPSLGoodness",
+      "lean_declaration": "QEC.Coding.QuantumTanner.ArithmeticPSLFamily.eventually_positiveProbability_good_arithmetic_code_family_of_complex_spectral_bounds",
+      "lean_source": "QEC/Coding/QuantumTanner/ArithmeticPSLGoodness.lean",
+      "documentation_route": "theorems/lz22-asymptotically-good-quantum-tanner/",
+      "citation_keys": [
+        "LZ22",
+        "DEL21"
+      ]
+    },
+    {
+      "id": "hypergraph-product-parameters",
+      "title": "General hypergraph-product code parameters",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.HypergraphProduct.ParametersTheorem",
+      "lean_declaration": "QEC.Coding.HypergraphProduct.tillichZemorHypergraphProductParameters",
+      "lean_source": "QEC/Coding/HypergraphProduct/ParametersTheorem.lean",
+      "documentation_route": "theorems/hypergraph-product-parameters/",
+      "citation_keys": [
+        "TZ09"
+      ]
+    },
+    {
+      "id": "hho20-fiber-bundle-qldpc",
+      "title": "HHO20 fiber-bundle and qLDPC families",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.FiberBundle.ExplicitFamily.Asymptotics",
+      "lean_declaration": "QEC.Coding.FiberBundle.HHO20DistanceBalancing.exists_hho20_binary_css_qldpc_family_at",
+      "lean_source": "QEC/Coding/FiberBundle/ExplicitFamily/Asymptotics.lean",
+      "documentation_route": "theorems/hho20-fiber-bundle-qldpc/",
+      "citation_keys": [
+        "HHO20"
+      ]
+    },
+    {
+      "id": "ltz15-quantum-expander-code",
+      "title": "LTZ15 quantum-expander construction and distance",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.ExpanderCodes.QuantumExpander",
+      "lean_declaration": "QEC.Coding.QuantumExpander.BiregularBipartiteGraph.leverrierTillichZemorQuantumExpanderParameters",
+      "lean_source": "QEC/Coding/ExpanderCodes/QuantumExpander.lean",
+      "documentation_route": "theorems/ltz15-quantum-expander-code/",
+      "citation_keys": [
+        "LTZ15"
+      ]
+    },
+    {
+      "id": "pk22-good-qldpc-conditional-lps",
+      "title": "PK22 good qLDPC codes assuming the LPS spectral theorem",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.ExpanderCodes.ConditionalGoodFamily",
+      "lean_declaration": "QEC.Coding.TannerLiftedProduct.exists_explicit_good_family_of_lps_spectral_bound",
+      "lean_source": "QEC/Coding/ExpanderCodes/ConditionalGoodFamily.lean",
+      "documentation_route": "theorems/pk22-good-qldpc-conditional-lps/",
+      "citation_keys": [
+        "PK22"
+      ]
+    },
+    {
+      "id": "bt-two-dimensional-constant-energy-barrier",
+      "title": "Bravyi--Terhal two-dimensional constant energy barrier",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.FourDimensionalToricCode.ConstantEnergyBarrier",
+      "lean_declaration": "QEC.Coding.StabilizerCode.LocalStabilizerHamiltonian.bt09_two_dimensional_constant_energy_barrier",
+      "lean_source": "QEC/Coding/FourDimensionalToricCode/ConstantEnergyBarrier.lean",
+      "documentation_route": "theorems/bt-two-dimensional-constant-energy-barrier/",
+      "citation_keys": [
+        "BT09"
+      ]
+    },
+    {
+      "id": "four-dimensional-toric-linear-energy-barrier",
+      "title": "Four-dimensional toric-code linear energy barrier",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.FourDimensionalToricCode.LinearEnergyBarrier",
+      "lean_declaration": "QEC.Coding.PeriodicCubical4.fourDimensionalToric_linearEnergyBarrier_theta",
+      "lean_source": "QEC/Coding/FourDimensionalToricCode/LinearEnergyBarrier.lean",
+      "documentation_route": "theorems/four-dimensional-toric-linear-energy-barrier/",
+      "citation_keys": [
+        "DKLP02"
+      ]
+    },
+    {
+      "id": "quantum-tanner-from-lifted-product",
+      "title": "Quantum Tanner code from selected lifted-product stabilizers",
+      "domain": "Coding",
+      "lean_module": "QEC.Coding.QuantumTanner.LiftedProductTannerCode",
+      "lean_declaration": "QEC.Coding.QuantumTanner.LiftedProductTannerCode.quantumTanner_from_liftedProduct",
+      "lean_source": "QEC/Coding/QuantumTanner/LiftedProductTannerCode.lean",
+      "documentation_route": "theorems/quantum-tanner-from-lifted-product/",
+      "citation_keys": [
+        "LZDec22"
+      ]
+    },
+    {
+      "id": "dai-li-optimal-locality-tradeoff",
+      "title": "Dai--Li optimal locality tradeoff",
+      "domain": "Locality",
+      "lean_module": "QEC.Locality.OptimalTradeoff.Bound",
+      "lean_declaration": "QEC.Locality.exists_daiLi_optimal_locality_tradeoff",
+      "lean_source": "QEC/Locality/OptimalTradeoff/Bound.lean",
+      "documentation_route": "theorems/dai-li-optimal-locality-tradeoff/",
+      "citation_keys": [
+        "DL24"
+      ]
+    },
+    {
+      "id": "bgkl-restricted-connectivity-tradeoff",
+      "title": "BGKL restricted-connectivity tradeoff",
+      "domain": "Locality",
+      "lean_module": "QEC.Locality.CorrectablePartition.RestrictedConnectivity",
+      "lean_declaration": "QEC.Locality.BGKLRestrictedConnectivityFamily.exists_bgklRestrictedConnectivityTradeoff",
+      "lean_source": "QEC/Locality/CorrectablePartition/RestrictedConnectivity.lean",
+      "documentation_route": "theorems/bgkl-restricted-connectivity-tradeoff/",
+      "citation_keys": [
+        "BGKL24"
+      ]
+    },
+    {
+      "id": "bk-connectivity-separator-tradeoff",
+      "title": "BK connectivity-separator tradeoff",
+      "domain": "Locality",
+      "lean_module": "QEC.Locality.ConnectivityTradeoff.SeparatorBound",
+      "lean_declaration": "QEC.Locality.BKQLDPCFamily.bk_connectivity_separator_tradeoff",
+      "lean_source": "QEC/Locality/ConnectivityTradeoff/SeparatorBound.lean",
+      "documentation_route": "theorems/bk-connectivity-separator-tradeoff/",
+      "citation_keys": [
+        "BK22"
+      ]
+    },
+    {
+      "id": "bpt-geometric-locality-tradeoff",
+      "title": "BPT geometric commuting-projector tradeoff",
+      "domain": "Bounds",
+      "lean_module": "QEC.Bounds.GeometricLocalityTradeoff.GeometricTradeoff",
+      "lean_declaration": "QEC.Bounds.BPTCommutingProjectorModel.bpt_geometric_locality_tradeoff",
+      "lean_source": "QEC/Bounds/GeometricLocalityTradeoff/GeometricTradeoff.lean",
+      "documentation_route": "theorems/bpt-geometric-locality-tradeoff/",
+      "citation_keys": [
+        "BPT10"
+      ]
+    },
+    {
+      "id": "ngu24-binary-transversal-ccz",
+      "title": "Ngu24 binary CSS family with transversal CCZ",
+      "domain": "Distillation",
+      "lean_module": "QEC.Distillation.MultiplicativeQuditProtocol.BinaryFamily",
+      "lean_declaration": "QEC.Distillation.Ngu24Binary.transversal_ccz_good_code",
+      "lean_source": "QEC/Distillation/MultiplicativeQuditProtocol/BinaryFamily.lean",
+      "documentation_route": "theorems/ngu24-binary-transversal-ccz/",
+      "citation_keys": [
+        "Ngu24",
+        "WHY24",
+        "GS05",
+        "Sti06",
+        "Sti09"
+      ]
+    },
+    {
+      "id": "kt19-qudit-vanishing-overhead-exponent",
+      "title": "KT19 prime-qudit distillation with a vanishing exponent",
+      "domain": "Distillation",
+      "lean_module": "QEC.Distillation.PrimeQuditProtocol.VanishingOverhead",
+      "lean_declaration": "QEC.Distillation.KT19VanishingOverhead.kt19_qudit_zero_exponent",
+      "lean_source": "QEC/Distillation/PrimeQuditProtocol/VanishingOverhead.lean",
+      "documentation_route": "theorems/kt19-qudit-vanishing-overhead-exponent/",
+      "citation_keys": [
+        "KT19"
+      ]
+    },
+    {
+      "id": "bk05-magic-state-fidelity-thresholds",
+      "title": "BK05 magic-state fidelity thresholds imply universality",
+      "domain": "Distillation",
+      "lean_module": "QEC.Distillation.MagicStateThreshold.Universality",
+      "lean_declaration": "QEC.Distillation.bk05_magicState_fidelity_thresholds_imply_universality",
+      "lean_source": "QEC/Distillation/MagicStateThreshold/Universality.lean",
+      "documentation_route": "theorems/bk05-magic-state-fidelity-thresholds/",
+      "citation_keys": [
+        "BK05"
+      ]
+    },
+    {
+      "id": "bh12-triorthogonal-code-distillation",
+      "title": "BH12 triorthogonal-code distillation family",
+      "domain": "Distillation",
+      "lean_module": "QEC.Distillation.Triorthogonal.Concatenation",
+      "lean_declaration": "QEC.Distillation.Triorthogonal.BH12Concatenation.bh12TriorthogonalCodeDistillation",
+      "lean_source": "QEC/Distillation/Triorthogonal/Concatenation.lean",
+      "documentation_route": "theorems/bh12-triorthogonal-code-distillation/",
+      "citation_keys": [
+        "BH12"
+      ]
+    },
+    {
+      "id": "hh18-sublogarithmic-distillation",
+      "title": "HH18 sublogarithmic magic-state distillation",
+      "domain": "Distillation",
+      "lean_module": "QEC.Distillation.LowOverheadProtocol.Sublogarithmic.Distillation",
+      "lean_declaration": "QEC.Distillation.HH18.hh18_sublogarithmic_distillation_overhead",
+      "lean_source": "QEC/Distillation/LowOverheadProtocol/Sublogarithmic/Distillation.lean",
+      "documentation_route": "theorems/hh18-sublogarithmic-distillation/",
+      "citation_keys": [
+        "HH18"
+      ]
+    },
+    {
+      "id": "why24-constant-overhead-distillation",
+      "title": "WHY24 constant-overhead CCZ distillation",
+      "domain": "Distillation",
+      "lean_module": "QEC.Distillation.ConstantOverheadProtocol.ConstantOverhead",
+      "lean_declaration": "QEC.Distillation.Why24ConstantOverhead.why24_constant_overhead_distillation",
+      "lean_source": "QEC/Distillation/ConstantOverheadProtocol/ConstantOverhead.lean",
+      "documentation_route": "theorems/why24-constant-overhead-distillation/",
+      "citation_keys": [
+        "WHY24",
+        "Sti09",
+        "GS95"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "AB08": {
+    "arxiv": null,
+    "title": "Buildings: Theory and Applications",
+    "url": "https://link.springer.com/book/10.1007/978-0-387-78835-7"
+  },
+  "BDL26": {
+    "arxiv": "2605.10943",
+    "title": "A passive self-correcting quantum memory in three dimensions",
+    "url": "https://arxiv.org/abs/2605.10943v1"
+  },
+  "BE20": {
+    "arxiv": "2012.09271",
+    "title": "Balanced product quantum codes",
+    "url": "https://arxiv.org/abs/2012.09271"
+  },
+  "BGKL24": {
+    "arxiv": "2307.03283",
+    "title": "Improved rate-distance trade-offs for quantum codes with restricted connectivity",
+    "url": "https://arxiv.org/abs/2307.03283"
+  },
+  "BH12": {
+    "arxiv": "1209.2426",
+    "title": "Magic state distillation with low overhead",
+    "url": "https://arxiv.org/abs/1209.2426"
+  },
+  "BK05": {
+    "arxiv": "quant-ph/0403025",
+    "title": "Universal Quantum Computation with ideal Clifford gates and noisy ancillas",
+    "url": "https://arxiv.org/abs/quant-ph/0403025"
+  },
+  "BK22": {
+    "arxiv": "2106.00765",
+    "title": "Connectivity constrains quantum codes",
+    "url": "https://arxiv.org/abs/2106.00765"
+  },
+  "BPT10": {
+    "arxiv": "0909.5200",
+    "title": "Tradeoffs for reliable quantum information storage in 2D systems",
+    "url": "https://arxiv.org/abs/0909.5200"
+  },
+  "BR17": {
+    "arxiv": "1302.5289",
+    "title": "Global Jacquet-Langlands correspondence for division algebras in characteristic p",
+    "url": "https://arxiv.org/abs/1302.5289"
+  },
+  "BT09": {
+    "arxiv": "0810.1983",
+    "title": "A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes",
+    "url": "https://arxiv.org/abs/0810.1983v2"
+  },
+  "CLBT10": {
+    "arxiv": "0907.2807",
+    "title": "Thermodynamic stability criteria for a quantum memory based on stabilizer and subsystem codes",
+    "url": "https://arxiv.org/abs/0907.2807v2"
+  },
+  "DEL21": {
+    "arxiv": "2111.04808",
+    "title": "Locally Testable Codes with constant rate, distance, and locality",
+    "url": "https://arxiv.org/abs/2111.04808v2"
+  },
+  "DKLP02": {
+    "arxiv": "quant-ph/0110143",
+    "title": "Topological quantum memory",
+    "url": "https://arxiv.org/abs/quant-ph/0110143v1"
+  },
+  "DL24": {
+    "arxiv": "2409.15203",
+    "title": "Locality vs Quantum Codes",
+    "url": "https://arxiv.org/abs/2409.15203"
+  },
+  "EK16": {
+    "arxiv": "1510.00839",
+    "title": "Bounded Degree Cosystolic Expanders of Every Dimension",
+    "url": "https://arxiv.org/abs/1510.00839"
+  },
+  "EKZ20": {
+    "arxiv": "2004.07935",
+    "title": "Decodable quantum LDPC codes beyond the square root distance barrier using high dimensional expanders",
+    "url": "https://arxiv.org/abs/2004.07935"
+  },
+  "GG24": {
+    "arxiv": "2408.09254",
+    "title": "Asymptotically Good Quantum Codes with Transversal Non-Clifford Gates",
+    "url": "https://arxiv.org/abs/2408.09254"
+  },
+  "GL14": {
+    "arxiv": "1310.5555",
+    "title": "Quantum Error-Correcting Codes and 4-Dimensional Arithmetic Hyperbolic Manifolds",
+    "url": "https://arxiv.org/abs/1310.5555"
+  },
+  "GS05": {
+    "arxiv": null,
+    "title": "Some Artin-Schreier towers are easy",
+    "url": "https://doi.org/10.17323/1609-4514-2005-5-4-767-774"
+  },
+  "GS95": {
+    "arxiv": null,
+    "title": "A tower of Artin--Schreier extensions of function fields attaining the Drinfeld--Vladut bound",
+    "url": "https://doi.org/10.1007/BF01884295"
+  },
+  "GTCCHK23": {
+    "arxiv": "2306.12470",
+    "title": "Single-shot decoding of good quantum LDPC codes",
+    "url": "https://arxiv.org/abs/2306.12470"
+  },
+  "Gott97": {
+    "arxiv": "quant-ph/9705052",
+    "title": "Stabilizer Codes and Quantum Error Correction",
+    "url": "https://arxiv.org/abs/quant-ph/9705052"
+  },
+  "HH18": {
+    "arxiv": "1709.03543",
+    "title": "Distillation with sublogarithmic overhead",
+    "url": "https://arxiv.org/abs/1709.03543"
+  },
+  "HHO20": {
+    "arxiv": "2009.03921",
+    "title": "Fiber bundle codes: breaking the N to the one-half polylog N barrier for quantum LDPC codes",
+    "url": "https://arxiv.org/abs/2009.03921"
+  },
+  "HHPW17": {
+    "arxiv": "1703.07847",
+    "title": "Magic State Distillation with Low Space Overhead and Optimal Asymptotic Input Count",
+    "url": "https://arxiv.org/abs/1703.07847"
+  },
+  "HKRS97": {
+    "arxiv": null,
+    "title": "Faster Shortest-Path Algorithms for Planar Graphs",
+    "url": "https://doi.org/10.1006/jcss.1997.1493"
+  },
+  "KKL16": {
+    "arxiv": "1409.1397",
+    "title": "Isoperimetric Inequalities for Ramanujan Complexes and Topological Expanders",
+    "url": "https://arxiv.org/abs/1409.1397"
+  },
+  "KL96": {
+    "arxiv": "quant-ph/9604034",
+    "title": "A Theory of Quantum Error-Correcting Codes",
+    "url": "https://arxiv.org/abs/quant-ph/9604034v1"
+  },
+  "KT19": {
+    "arxiv": "1811.08461",
+    "title": "Towards low overhead magic state distillation",
+    "url": "https://arxiv.org/abs/1811.08461"
+  },
+  "LM07": {
+    "arxiv": null,
+    "title": "A Moore Bound for Simplicial Complexes",
+    "url": "https://doi.org/10.1112/blms/bdm003"
+  },
+  "LSV05a": {
+    "arxiv": "math/0406208",
+    "title": "Ramanujan Complexes of Type A-tilde_d",
+    "url": "https://arxiv.org/abs/math/0406208"
+  },
+  "LSV05b": {
+    "arxiv": "math/0406217",
+    "title": "Explicit Constructions of Ramanujan Complexes of Type A-tilde_d",
+    "url": "https://arxiv.org/abs/math/0406217"
+  },
+  "LTZ15": {
+    "arxiv": "1504.00822",
+    "title": "Quantum expander codes",
+    "url": "https://arxiv.org/abs/1504.00822"
+  },
+  "LZ22": {
+    "arxiv": "2202.13641",
+    "title": "Quantum Tanner codes",
+    "url": "https://arxiv.org/abs/2202.13641"
+  },
+  "LZDec22": {
+    "arxiv": "2206.07571",
+    "title": "Efficient decoding up to a constant fraction of the code length for asymptotically good quantum codes",
+    "url": "https://arxiv.org/abs/2206.07571"
+  },
+  "LZTD22": {
+    "arxiv": "2208.05537",
+    "title": "Decoding quantum Tanner codes",
+    "url": "https://arxiv.org/abs/2208.05537"
+  },
+  "Laf02": {
+    "arxiv": null,
+    "title": "Chtoucas de Drinfeld et correspondance de Langlands",
+    "url": "https://doi.org/10.1007/s002220100174"
+  },
+  "Laf97": {
+    "arxiv": null,
+    "title": "Chtoucas de Drinfeld et conjecture de Ramanujan-Petersson",
+    "url": "http://www.numdam.org/item/AST_1997__243__R1_0/"
+  },
+  "Lau96": {
+    "arxiv": null,
+    "title": "Cohomology of Drinfeld Modular Varieties, Parts I and II",
+    "url": "https://www.cambridge.org/core/books/cohomology-of-drinfeld-modular-varieties/C291C7464AE8E45E7CF9622CDF9C8D49"
+  },
+  "MW89": {
+    "arxiv": null,
+    "title": "Le spectre residuel de GL(n)",
+    "url": "https://doi.org/10.24033/asens.1595"
+  },
+  "Ngu24": {
+    "arxiv": "2408.10140",
+    "title": "Good binary quantum codes with transversal CCZ gate",
+    "url": "https://arxiv.org/abs/2408.10140"
+  },
+  "PK20": {
+    "arxiv": "2012.04068",
+    "title": "Quantum LDPC codes with almost linear minimum distance",
+    "url": "https://arxiv.org/abs/2012.04068"
+  },
+  "PK22": {
+    "arxiv": "2111.03654",
+    "title": "Asymptotically good quantum and locally testable classical LDPC codes",
+    "url": "https://arxiv.org/abs/2111.03654"
+  },
+  "Pra77": {
+    "arxiv": null,
+    "title": "Strong approximation for semi-simple groups over function fields",
+    "url": "https://annals.math.princeton.edu/1977/105-3/p07"
+  },
+  "Sti06": {
+    "arxiv": null,
+    "title": "Transitive and Self-Dual Codes Attaining the Tsfasman--Vladut--Zink Bound",
+    "url": "https://doi.org/10.1109/TIT.2006.872986"
+  },
+  "Sti09": {
+    "arxiv": null,
+    "title": "Algebraic Function Fields and Codes",
+    "url": "https://link.springer.com/book/10.1007/978-3-540-76878-4"
+  },
+  "TZ09": {
+    "arxiv": "0903.0566",
+    "title": "Quantum LDPC codes with positive rate and minimum distance proportional to the square root of the blocklength",
+    "url": "https://arxiv.org/abs/0903.0566"
+  },
+  "WHY24": {
+    "arxiv": "2408.07764",
+    "title": "Constant-Overhead Magic State Distillation",
+    "url": "https://arxiv.org/abs/2408.07764"
+  }
+}

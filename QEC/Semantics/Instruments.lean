@@ -1,0 +1,37 @@
+import QEC.Semantics.Instruments.Branches.BranchOperatorLinear
+import QEC.Semantics.Instruments.Branches.ChannelFirstFilteredBranchOperator
+import QEC.Semantics.Instruments.Sequential.Composition
+import QEC.Semantics.Instruments.Core
+import QEC.Semantics.Instruments.Sequential.DependentComposition
+import QEC.Semantics.Instruments.Branches.FilteredBranchMeasurement
+import QEC.Semantics.Instruments.NestedTensor.FilteredMarginalBranchOperator
+import QEC.Semantics.Instruments.NestedTensor.MarginalBornMass
+import QEC.Semantics.Instruments.NestedTensor.MarginalBranchOperator
+import QEC.Semantics.Instruments.NestedTensor.Power
+import QEC.Semantics.Instruments.NestedTensor.PowerBasis
+import QEC.Semantics.Instruments.Sequential.BornMass
+import QEC.Semantics.Instruments.Sequential.FilteredBranchOperator
+import QEC.Semantics.Instruments.Sequential.NestedFilteredMarginalBranchOperator
+import QEC.Semantics.Instruments.Tensor.MarginalBornMass
+import QEC.Semantics.Instruments.Tensor.MarginalChannel
+import QEC.Semantics.Instruments.TensorPower.Basis
+import QEC.Semantics.Instruments.TensorPower.BornMass
+import QEC.Semantics.Instruments.TensorPower.BranchOperator
+import QEC.Semantics.Instruments.TensorPower.ChannelProduct
+import QEC.Semantics.Instruments.TensorPower.ChannelProductFunctorial
+import QEC.Semantics.Instruments.TensorPower.ConditionedBranchOperator
+import QEC.Semantics.Instruments.TensorPower.ConditionedChannel
+import QEC.Semantics.Instruments.TensorPower.FilteredMarginalBranchOperator
+import QEC.Semantics.Instruments.TensorPower.FirstMoment
+import QEC.Semantics.Instruments.TensorPower.MarginalBranchOperator
+import QEC.Semantics.Instruments.Registers.ChannelProduct
+import QEC.Semantics.Instruments.Registers.Marginal
+import QEC.Semantics.Instruments.Registers.ProductDensity
+import QEC.Semantics.Instruments.Selection.SelectedBranchOperator
+import QEC.Semantics.Instruments.Selection.SelectedSubsystem
+import QEC.Semantics.Instruments.Selection.SelectedSubsystemOperator
+import QEC.Semantics.Instruments.Selection.SelectedTrialComplement
+import QEC.Semantics.Instruments.Selection.SelectedTrialProduct
+import QEC.Semantics.Instruments.Selection.Selection
+
+/-! # Finite instruments and tensor-power constructions -/

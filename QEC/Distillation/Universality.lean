@@ -1,0 +1,18 @@
+import QEC.Distillation.Universality.AdaptiveIdealClifford
+import QEC.Distillation.Universality.FiniteRegisterUniversality
+import QEC.Distillation.Universality.GeneratedUniversality
+import QEC.Distillation.Universality.HAngleUniversality
+import QEC.Distillation.Universality.HResourcePhase
+import QEC.Distillation.Universality.IdealResourceUniversality
+import QEC.Distillation.Universality.OneQubitClifford
+import QEC.Distillation.Universality.OneQubitGeneratedUniversality
+import QEC.Distillation.Universality.OneQubitMagic
+import QEC.Distillation.Universality.OneQubitMagicState
+import QEC.Distillation.Universality.OneQubitPhase
+import QEC.Distillation.Universality.SU2AxisCircle
+import QEC.Distillation.Universality.SU2GeneratedDensity
+import QEC.Distillation.Universality.SU2NonparallelAxes
+import QEC.Distillation.Universality.TPhaseGeneratedUniversality
+import QEC.Distillation.Universality.TResourcePhase
+
+/-! # Universality from magic resources -/
