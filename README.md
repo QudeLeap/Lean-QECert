@@ -1,5 +1,11 @@
 # Lean-QECert
 
+<p align="center">
+  <a href="https://github.com/leanprover/lean4/releases/tag/v4.33.1"><img src="https://img.shields.io/badge/Lean-v4.33.1-6C5CE7" alt="Lean v4.33.1"></a>
+  <a href="https://github.com/leanprover-community/mathlib4/releases/tag/v4.33.1"><img src="https://img.shields.io/badge/mathlib-v4.33.1-0087BD" alt="mathlib v4.33.1"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache License 2.0"></a>
+</p>
+
 Lean-QECert is a Lean 4 library for quantum error correction, built on Mathlib.
 It formalizes quantum-code semantics, code constructions, locality bounds,
 magic-state distillation, and quantum memory theory.
@@ -66,8 +72,7 @@ do not yet constitute an end-to-end passive quantum memory theorem.
 
 ## Getting started
 
-The first release, v0.1.0, is in preparation. The example below targets that
-planned release. The current toolchain is Lean/Mathlib v4.33.1:
+The example below targets Lean-QECert 0.1.0. Use Lean/Mathlib v4.33.1:
 
 ```text
 leanprover/lean4:v4.33.1
@@ -79,7 +84,7 @@ Add to your `lakefile.toml`:
 [[require]]
 name = "QEC"
 git = "https://github.com/QudeLeap/Lean-QECert.git"
-rev = "v0.1.0"
+rev = "0.1.0"
 ```
 
 For example, in `Example.lean`:
@@ -119,7 +124,7 @@ results and their prerequisite chains.
 
 Please cite the original mathematical sources for the results you use, as well
 as Lean-QECert. Citation keys in the Lean source refer to [REFERENCES.json](REFERENCES.json).
-For the planned v0.1.0 release:
+For version 0.1.0:
 
 ```text
 The Lean-QECert contributors. Lean-QECert, version 0.1.0. 2026.
