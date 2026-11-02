@@ -20,3 +20,5 @@ import QEC.Coding.Stabilizer.PathEnergy
 import QEC.Coding.Stabilizer.PauliSemantics
 import QEC.Coding.Stabilizer.Symplectic
 import QEC.Coding.Stabilizer.SyndromeInjectivity
+import QEC.Coding.Stabilizer.SupportEnergyBounds
+import QEC.Coding.Stabilizer.TwoDimensional

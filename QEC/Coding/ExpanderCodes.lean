@@ -146,7 +146,6 @@ import QEC.Coding.ExpanderCodes.ClassicalRowReduction
 import QEC.Coding.ExpanderCodes.ClassicalFactor
 import QEC.Coding.ExpanderCodes.TwoStepBalancing
 import QEC.Coding.ExpanderCodes.Tradeoff
-import QEC.Coding.ExpanderCodes.LiftedProductAlmostLinear
 import QEC.Coding.ExpanderCodes.LocallyMinimalDistance
 import QEC.Coding.ExpanderCodes.ProductExpansion
 import QEC.Coding.ExpanderCodes.ProductExpansionProbability
@@ -249,7 +248,6 @@ import QEC.Coding.ExpanderCodes.LPSThetaPeterssonPositive
 import QEC.Coding.ExpanderCodes.LPSModularTraceBridge
 import QEC.Coding.ExpanderCodes.LPSCodeFamily
 import QEC.Coding.ExpanderCodes.LPSGoodFamilyAssembly
-import QEC.Coding.ExpanderCodes.ConditionalGoodFamily
 import QEC.Coding.ExpanderCodes.LPSEffectivePrime
 import QEC.Coding.ExpanderCodes.LPSPrimeMachine
 import QEC.Coding.ExpanderCodes.LPSSparseCSS

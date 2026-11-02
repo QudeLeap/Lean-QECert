@@ -12,13 +12,17 @@ magic-state distillation, and quantum memory theory.
 
 ## Library overview
 
-| Domain import | Content |
+| Library import | Content |
 | --- | --- |
 | [`QEC.Semantics`](QEC/Semantics.lean) | States, channels, instruments, error correction, entropy, and dynamics. |
 | [`QEC.Coding`](QEC/Coding.lean) | Stabilizer/CSS codes and algebraic code constructions. |
 | [`QEC.Locality`](QEC/Locality.lean) | Interaction graphs, correctable regions, and separators. |
-| [`QEC.Bounds`](QEC/Bounds.lean) | Geometric locality tradeoffs. |
+| [`QEC.Bounds`](QEC/Bounds.lean) | Commuting-projector and geometric-bound proof methods. |
 | [`QEC.Distillation`](QEC/Distillation.lean) | Magic-state protocols, transversal gates, and distillation overhead. |
+| [`QEC.Results`](QEC/Results.lean) | Final theorem assemblies; currently the locality-bound results. |
+
+Import `QEC.Results.LocalityBounds` for the final geometric and connectivity
+tradeoffs. Reusable constructions and proof methods remain in the domain imports.
 
 For agent-oriented navigation with exact theorem names, focused imports, source
 paths and documentation routes, see [MAIN_RESULTS.json](MAIN_RESULTS.json).
@@ -34,37 +38,37 @@ Highlights include selected results from the following papers:
     ([Lean](QEC/Coding/Stabilizer/Distance.lean)).
 - **Code constructions**
   - [Quantum LDPC codes with positive rate and minimum distance proportional to the square root of the blocklength](https://arxiv.org/abs/0903.0566)
-    ([Lean](QEC/Coding/HypergraphProduct/ParametersTheorem.lean)).
+    ([Lean](QEC/Results/QLDPC/HypergraphProductParameters.lean)).
   - [Quantum expander codes](https://arxiv.org/abs/1504.00822)
-    ([Lean](QEC/Coding/ExpanderCodes/QuantumExpander.lean)).
+    ([Lean](QEC/Results/QLDPC/QuantumExpanderParameters.lean)).
   - [Fiber bundle codes: breaking the N to the one-half polylog N barrier for quantum LDPC codes](https://arxiv.org/abs/2009.03921)
-    ([Lean](QEC/Coding/FiberBundle/ExplicitFamily/Asymptotics.lean)).
+    ([Lean](QEC/Results/QLDPC/FiberBundleFamily.lean)).
 - **Conditional good qLDPC families**
   - [Asymptotically good quantum and locally testable classical LDPC codes](https://arxiv.org/abs/2111.03654)
-    ([Lean](QEC/Coding/ExpanderCodes/ConditionalGoodFamily.lean)).
+    ([Lean](QEC/Results/QLDPC/ConditionalLiftedProductFamily.lean)).
   - [Quantum Tanner codes](https://arxiv.org/abs/2202.13641)
-    ([Lean](QEC/Coding/QuantumTanner/ArithmeticPSLGoodness.lean)).
+    ([Lean](QEC/Results/QLDPC/ConditionalQuantumTannerFamily.lean)).
 - **Locality bounds**
   - [Tradeoffs for reliable quantum information storage in 2D systems](https://arxiv.org/abs/0909.5200)
-    ([Lean](QEC/Bounds/GeometricLocalityTradeoff/GeometricTradeoff.lean)).
+    ([Lean](QEC/Results/LocalityBounds/GeometricTradeoff.lean)).
   - [Connectivity constrains quantum codes](https://arxiv.org/abs/2106.00765)
-    ([Lean](QEC/Locality/ConnectivityTradeoff/SeparatorBound.lean)).
+    ([Lean](QEC/Results/LocalityBounds/ConnectivitySeparator.lean)).
   - [Improved rate-distance trade-offs for quantum codes with restricted connectivity](https://arxiv.org/abs/2307.03283)
-    ([Lean](QEC/Locality/CorrectablePartition/RestrictedConnectivity.lean)).
+    ([Lean](QEC/Results/LocalityBounds/RestrictedConnectivity.lean)).
   - [Locality vs Quantum Codes](https://arxiv.org/abs/2409.15203)
-    ([Lean](QEC/Locality/OptimalTradeoff/Bound.lean)).
+    ([Lean](QEC/Results/LocalityBounds/OptimalTradeoff.lean)).
 - **Magic-state distillation**
   - [Universal Quantum Computation with ideal Clifford gates and noisy ancillas](https://arxiv.org/abs/quant-ph/0403025)
-    ([Lean](QEC/Distillation/MagicStateThreshold/Universality.lean)).
+    ([Lean](QEC/Results/Distillation/MagicStateThreshold.lean)).
   - [Distillation with sublogarithmic overhead](https://arxiv.org/abs/1709.03543)
-    ([Lean](QEC/Distillation/LowOverheadProtocol/Sublogarithmic/Distillation.lean)).
+    ([Lean](QEC/Results/Distillation/SublogarithmicOverhead.lean)).
   - [Constant-Overhead Magic State Distillation](https://arxiv.org/abs/2408.07764)
-    ([Lean](QEC/Distillation/ConstantOverheadProtocol/ConstantOverhead.lean)).
+    ([Lean](QEC/Results/Distillation/ConstantOverhead.lean)).
 - **Quantum memory**
   - [A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes](https://arxiv.org/abs/0810.1983v2)
-    ([Lean](QEC/Coding/FourDimensionalToricCode/ConstantEnergyBarrier.lean)).
+    ([Lean](QEC/Results/QuantumMemory/TwoDimensionalEnergyBarrier.lean)).
   - [Thermodynamic stability criteria for a quantum memory based on stabilizer and subsystem codes](https://arxiv.org/abs/0907.2807v2)
-    ([Lean](QEC/Semantics/Dynamics/StableSyndromeLifetime.lean)).
+    ([Lean](QEC/Results/QuantumMemory/StableSyndromeStorage.lean)).
 
 Each result retains its stated hypotheses. The good qLDPC family results
 assume external spectral bounds. Completed energy-barrier and storage results

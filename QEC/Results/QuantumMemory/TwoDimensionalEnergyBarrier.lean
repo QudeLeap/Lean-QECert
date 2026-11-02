@@ -1,4 +1,4 @@
-import QEC.Coding.FourDimensionalToricCode.StripLogicalPath
+import QEC.Coding.Stabilizer.TwoDimensional.StripLogicalPath
 
 /-!
 # Bravyi--Terhal two-dimensional constant energy barrier
@@ -22,70 +22,6 @@ open scoped Classical
 universe u
 
 variable {κ : Type u} [Fintype κ]
-
-/-- Every violated selected generator is incident on the error support. -/
-theorem violatedGenerators_subset_incidentGeneratorUnion_support
-    {ι : Type*} [Fintype ι] [DecidableEq ι]
-    (H : LocalStabilizerHamiltonian (ι := ι) (κ := κ))
-    (E : Binary ι) :
-    H.violatedGenerators E ⊆ H.incidentGeneratorUnion (support E) := by
-  intro j hj
-  rw [mem_violatedGenerators] at hj
-  have hnotDisjoint :
-      ¬ Disjoint (support E) (support (H.generators j)) := by
-    intro hdisjoint
-    exact hj
-      (QEC.Locality.commutes_of_disjoint_support
-        E (H.generators j) hdisjoint)
-  obtain ⟨i, hiE, hiGenerator⟩ :=
-    Finset.not_disjoint_iff.mp hnotDisjoint
-  exact
-    H.mem_incidentGeneratorUnion_of_mem_generatorSupport
-      (support E) i j hiE hiGenerator
-
-/-- A finite-support error has energy bounded by support size times participation. -/
-theorem btExcessEnergy_le_two_mul_support_card_mul_participationBound
-    {ι : Type*} [Fintype ι] [DecidableEq ι]
-    (H : LocalStabilizerHamiltonian (ι := ι) (κ := κ))
-    (E : Binary ι) :
-    H.btExcessEnergy E ≤
-      2 * (support E).card * H.participationBound := by
-  have hsubset :=
-    H.violatedGenerators_subset_incidentGeneratorUnion_support E
-  have hincident :=
-    H.card_incidentGeneratorUnion_le (support E)
-  unfold btExcessEnergy unitDefectEnergy
-  calc
-    2 * (H.violatedGenerators E).card
-        ≤ 2 * (H.incidentGeneratorUnion (support E)).card :=
-      Nat.mul_le_mul_left 2 (Finset.card_le_card hsubset)
-    _ ≤ 2 * (support E).card * H.participationBound := by
-      simpa [Nat.mul_assoc] using Nat.mul_le_mul_left 2 hincident
-
-/-- The exact row-major path on an `L` by `L` lattice has the naive `O(L^2)` bound. -/
-theorem pathHeight_rowMajorExactPath_le_full_lattice
-    {L : Nat}
-    (H : LocalStabilizerHamiltonian
-      (ι := StripGeometry.Site L) (κ := κ))
-    (Q : Binary (StripGeometry.Site L)) :
-    H.pathHeight (StripGeometry.rowMajorExactPath Q) ≤
-      2 * (L * L) * H.participationBound := by
-  rw [pathHeight]
-  apply Finset.sup_le
-  intro n _hn
-  have henergy :=
-    H.btExcessEnergy_le_two_mul_support_card_mul_participationBound
-      ((StripGeometry.rowMajorExactPath Q).stateAt n)
-  have hcard :
-      (support ((StripGeometry.rowMajorExactPath Q).stateAt n)).card ≤
-        L * L := by
-    calc
-      _ ≤ Fintype.card (StripGeometry.Site L) :=
-        Finset.card_le_univ _
-      _ = L * L := by simp [StripGeometry.Site]
-  exact henergy.trans
-    (Nat.mul_le_mul_right H.participationBound
-      (Nat.mul_le_mul_left 2 hcard))
 
 /--
 BT09 Theorem 2, in the selected-generator and single-qubit-walk conventions.

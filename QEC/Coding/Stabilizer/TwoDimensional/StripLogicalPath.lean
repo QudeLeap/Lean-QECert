@@ -1,5 +1,5 @@
-import QEC.Coding.FourDimensionalToricCode.AlternatingStripDistance
-import QEC.Coding.Stabilizer.PathEnergy
+import QEC.Coding.Stabilizer.TwoDimensional.AlternatingStripDistance
+import QEC.Coding.Stabilizer.SupportEnergyBounds
 
 /-!
 # Row-by-row logical Pauli paths
@@ -634,33 +634,6 @@ namespace StabilizerCode.LocalStabilizerHamiltonian
 
 variable {κ : Type*} [Fintype κ]
 
-/-- Selected generators incident on at least one site of a finite region. -/
-def incidentGeneratorUnion
-    {ι : Type*} [Fintype ι] [DecidableEq ι]
-    (H : LocalStabilizerHamiltonian (ι := ι) (κ := κ))
-    (R : Finset ι) : Finset κ :=
-  R.biUnion H.incidentGenerators
-
-theorem card_incidentGeneratorUnion_le
-    {ι : Type*} [Fintype ι] [DecidableEq ι]
-    (H : LocalStabilizerHamiltonian (ι := ι) (κ := κ))
-    (R : Finset ι) :
-    (H.incidentGeneratorUnion R).card ≤
-      R.card * H.participationBound := by
-  exact
-    Finset.card_biUnion_le_card_mul R H.incidentGenerators
-      H.participationBound fun i _hi => H.incidentGenerators_card_le i
-
-theorem mem_incidentGeneratorUnion_of_mem_generatorSupport
-    {ι : Type*} [Fintype ι] [DecidableEq ι]
-    (H : LocalStabilizerHamiltonian (ι := ι) (κ := κ))
-    (R : Finset ι) (i : ι) (j : κ)
-    (hiR : i ∈ R) (hij : i ∈ support (H.generators j)) :
-    j ∈ H.incidentGeneratorUnion R := by
-  rw [incidentGeneratorUnion, Finset.mem_biUnion]
-  refine ⟨i, hiR, ?_⟩
-  simpa [incidentGenerators, generatorSupport] using hij
-
 theorem violatedGenerators_eq_of_vector_eq
     {ι : Type*} [Fintype ι] [DecidableEq ι]
     (H : LocalStabilizerHamiltonian (ι := ι) (κ := κ))
@@ -1120,5 +1093,47 @@ theorem exists_periodic_rowMajor_logical_path
       (Nat.lt_succ_iff.mp (Finset.mem_range.mp hn))
 
 end StabilizerCode.LocalStabilizerHamiltonian
+end Coding
+end QEC
+
+namespace QEC
+namespace Coding
+namespace StabilizerCode
+namespace LocalStabilizerHamiltonian
+
+open PauliSymplectic
+open scoped Classical
+
+universe u
+
+variable {κ : Type u} [Fintype κ]
+
+/-- The exact row-major path on an `L` by `L` lattice has the naive `O(L^2)` bound. -/
+theorem pathHeight_rowMajorExactPath_le_full_lattice
+    {L : Nat}
+    (H : LocalStabilizerHamiltonian
+      (ι := StripGeometry.Site L) (κ := κ))
+    (Q : Binary (StripGeometry.Site L)) :
+    H.pathHeight (StripGeometry.rowMajorExactPath Q) ≤
+      2 * (L * L) * H.participationBound := by
+  rw [pathHeight]
+  apply Finset.sup_le
+  intro n _hn
+  have henergy :=
+    H.btExcessEnergy_le_two_mul_support_card_mul_participationBound
+      ((StripGeometry.rowMajorExactPath Q).stateAt n)
+  have hcard :
+      (support ((StripGeometry.rowMajorExactPath Q).stateAt n)).card ≤
+        L * L := by
+    calc
+      _ ≤ Fintype.card (StripGeometry.Site L) :=
+        Finset.card_le_univ _
+      _ = L * L := by simp [StripGeometry.Site]
+  exact henergy.trans
+    (Nat.mul_le_mul_right H.participationBound
+      (Nat.mul_le_mul_left 2 hcard))
+
+end LocalStabilizerHamiltonian
+end StabilizerCode
 end Coding
 end QEC

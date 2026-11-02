@@ -1,2 +1,2 @@
 import QEC.Bounds.GeometricLocalityTradeoff.Bound
-import QEC.Bounds.GeometricLocalityTradeoff.GeometricTradeoff
+import QEC.Bounds.GeometricLocalityTradeoff.SquarePartition

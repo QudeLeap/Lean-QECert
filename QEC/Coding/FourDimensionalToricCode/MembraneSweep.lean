@@ -1,5 +1,5 @@
 import QEC.Coding.FourDimensionalToricCode.MembraneSyndrome
-import QEC.Coding.FourDimensionalToricCode.StripLogicalPath
+import QEC.Coding.Stabilizer.TwoDimensional.StripLogicalPath
 
 /-!
 # Explicit membrane sweeps for the four-dimensional toric code

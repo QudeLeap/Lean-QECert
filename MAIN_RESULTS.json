@@ -38,9 +38,9 @@
       "id": "stable-syndrome-lifetime-bridge",
       "title": "Stable-syndrome quantitative storage bridge",
       "domain": "Semantics",
-      "lean_module": "QEC.Semantics.Dynamics.StableSyndromeLifetime",
+      "lean_module": "QEC.Results.QuantumMemory.StableSyndromeStorage",
       "lean_declaration": "QEC.Semantics.stableSyndromeLifetimeBridge",
-      "lean_source": "QEC/Semantics/Dynamics/StableSyndromeLifetime.lean",
+      "lean_source": "QEC/Results/QuantumMemory/StableSyndromeStorage.lean",
       "documentation_route": "theorems/stable-syndrome-lifetime-bridge/",
       "citation_keys": [
         "CLBT10"
@@ -232,9 +232,9 @@
       "id": "lz22-asymptotically-good-quantum-tanner",
       "title": "Conditional LZ22 asymptotically good Quantum Tanner codes",
       "domain": "Coding",
-      "lean_module": "QEC.Coding.QuantumTanner.ArithmeticPSLGoodness",
+      "lean_module": "QEC.Results.QLDPC.ConditionalQuantumTannerFamily",
       "lean_declaration": "QEC.Coding.QuantumTanner.ArithmeticPSLFamily.eventually_positiveProbability_good_arithmetic_code_family_of_complex_spectral_bounds",
-      "lean_source": "QEC/Coding/QuantumTanner/ArithmeticPSLGoodness.lean",
+      "lean_source": "QEC/Results/QLDPC/ConditionalQuantumTannerFamily.lean",
       "documentation_route": "theorems/lz22-asymptotically-good-quantum-tanner/",
       "citation_keys": [
         "LZ22",
@@ -245,9 +245,9 @@
       "id": "hypergraph-product-parameters",
       "title": "General hypergraph-product code parameters",
       "domain": "Coding",
-      "lean_module": "QEC.Coding.HypergraphProduct.ParametersTheorem",
+      "lean_module": "QEC.Results.QLDPC.HypergraphProductParameters",
       "lean_declaration": "QEC.Coding.HypergraphProduct.tillichZemorHypergraphProductParameters",
-      "lean_source": "QEC/Coding/HypergraphProduct/ParametersTheorem.lean",
+      "lean_source": "QEC/Results/QLDPC/HypergraphProductParameters.lean",
       "documentation_route": "theorems/hypergraph-product-parameters/",
       "citation_keys": [
         "TZ09"
@@ -257,9 +257,9 @@
       "id": "hho20-fiber-bundle-qldpc",
       "title": "HHO20 fiber-bundle and qLDPC families",
       "domain": "Coding",
-      "lean_module": "QEC.Coding.FiberBundle.ExplicitFamily.Asymptotics",
+      "lean_module": "QEC.Results.QLDPC.FiberBundleFamily",
       "lean_declaration": "QEC.Coding.FiberBundle.HHO20DistanceBalancing.exists_hho20_binary_css_qldpc_family_at",
-      "lean_source": "QEC/Coding/FiberBundle/ExplicitFamily/Asymptotics.lean",
+      "lean_source": "QEC/Results/QLDPC/FiberBundleFamily.lean",
       "documentation_route": "theorems/hho20-fiber-bundle-qldpc/",
       "citation_keys": [
         "HHO20"
@@ -269,9 +269,9 @@
       "id": "ltz15-quantum-expander-code",
       "title": "LTZ15 quantum-expander construction and distance",
       "domain": "Coding",
-      "lean_module": "QEC.Coding.ExpanderCodes.QuantumExpander",
+      "lean_module": "QEC.Results.QLDPC.QuantumExpanderParameters",
       "lean_declaration": "QEC.Coding.QuantumExpander.BiregularBipartiteGraph.leverrierTillichZemorQuantumExpanderParameters",
-      "lean_source": "QEC/Coding/ExpanderCodes/QuantumExpander.lean",
+      "lean_source": "QEC/Results/QLDPC/QuantumExpanderParameters.lean",
       "documentation_route": "theorems/ltz15-quantum-expander-code/",
       "citation_keys": [
         "LTZ15"
@@ -281,9 +281,9 @@
       "id": "pk22-good-qldpc-conditional-lps",
       "title": "PK22 good qLDPC codes assuming the LPS spectral theorem",
       "domain": "Coding",
-      "lean_module": "QEC.Coding.ExpanderCodes.ConditionalGoodFamily",
+      "lean_module": "QEC.Results.QLDPC.ConditionalLiftedProductFamily",
       "lean_declaration": "QEC.Coding.TannerLiftedProduct.exists_explicit_good_family_of_lps_spectral_bound",
-      "lean_source": "QEC/Coding/ExpanderCodes/ConditionalGoodFamily.lean",
+      "lean_source": "QEC/Results/QLDPC/ConditionalLiftedProductFamily.lean",
       "documentation_route": "theorems/pk22-good-qldpc-conditional-lps/",
       "citation_keys": [
         "PK22"
@@ -293,9 +293,9 @@
       "id": "bt-two-dimensional-constant-energy-barrier",
       "title": "Bravyi--Terhal two-dimensional constant energy barrier",
       "domain": "Coding",
-      "lean_module": "QEC.Coding.FourDimensionalToricCode.ConstantEnergyBarrier",
+      "lean_module": "QEC.Results.QuantumMemory.TwoDimensionalEnergyBarrier",
       "lean_declaration": "QEC.Coding.StabilizerCode.LocalStabilizerHamiltonian.bt09_two_dimensional_constant_energy_barrier",
-      "lean_source": "QEC/Coding/FourDimensionalToricCode/ConstantEnergyBarrier.lean",
+      "lean_source": "QEC/Results/QuantumMemory/TwoDimensionalEnergyBarrier.lean",
       "documentation_route": "theorems/bt-two-dimensional-constant-energy-barrier/",
       "citation_keys": [
         "BT09"
@@ -305,9 +305,9 @@
       "id": "four-dimensional-toric-linear-energy-barrier",
       "title": "Four-dimensional toric-code linear energy barrier",
       "domain": "Coding",
-      "lean_module": "QEC.Coding.FourDimensionalToricCode.LinearEnergyBarrier",
+      "lean_module": "QEC.Results.QuantumMemory.FourDimensionalEnergyBarrier",
       "lean_declaration": "QEC.Coding.PeriodicCubical4.fourDimensionalToric_linearEnergyBarrier_theta",
-      "lean_source": "QEC/Coding/FourDimensionalToricCode/LinearEnergyBarrier.lean",
+      "lean_source": "QEC/Results/QuantumMemory/FourDimensionalEnergyBarrier.lean",
       "documentation_route": "theorems/four-dimensional-toric-linear-energy-barrier/",
       "citation_keys": [
         "DKLP02"
@@ -329,9 +329,9 @@
       "id": "dai-li-optimal-locality-tradeoff",
       "title": "Dai--Li optimal locality tradeoff",
       "domain": "Locality",
-      "lean_module": "QEC.Locality.OptimalTradeoff.Bound",
+      "lean_module": "QEC.Results.LocalityBounds.OptimalTradeoff",
       "lean_declaration": "QEC.Locality.exists_daiLi_optimal_locality_tradeoff",
-      "lean_source": "QEC/Locality/OptimalTradeoff/Bound.lean",
+      "lean_source": "QEC/Results/LocalityBounds/OptimalTradeoff.lean",
       "documentation_route": "theorems/dai-li-optimal-locality-tradeoff/",
       "citation_keys": [
         "DL24"
@@ -341,9 +341,9 @@
       "id": "bgkl-restricted-connectivity-tradeoff",
       "title": "BGKL restricted-connectivity tradeoff",
       "domain": "Locality",
-      "lean_module": "QEC.Locality.CorrectablePartition.RestrictedConnectivity",
+      "lean_module": "QEC.Results.LocalityBounds.RestrictedConnectivity",
       "lean_declaration": "QEC.Locality.BGKLRestrictedConnectivityFamily.exists_bgklRestrictedConnectivityTradeoff",
-      "lean_source": "QEC/Locality/CorrectablePartition/RestrictedConnectivity.lean",
+      "lean_source": "QEC/Results/LocalityBounds/RestrictedConnectivity.lean",
       "documentation_route": "theorems/bgkl-restricted-connectivity-tradeoff/",
       "citation_keys": [
         "BGKL24"
@@ -353,9 +353,9 @@
       "id": "bk-connectivity-separator-tradeoff",
       "title": "BK connectivity-separator tradeoff",
       "domain": "Locality",
-      "lean_module": "QEC.Locality.ConnectivityTradeoff.SeparatorBound",
+      "lean_module": "QEC.Results.LocalityBounds.ConnectivitySeparator",
       "lean_declaration": "QEC.Locality.BKQLDPCFamily.bk_connectivity_separator_tradeoff",
-      "lean_source": "QEC/Locality/ConnectivityTradeoff/SeparatorBound.lean",
+      "lean_source": "QEC/Results/LocalityBounds/ConnectivitySeparator.lean",
       "documentation_route": "theorems/bk-connectivity-separator-tradeoff/",
       "citation_keys": [
         "BK22"
@@ -365,9 +365,9 @@
       "id": "bpt-geometric-locality-tradeoff",
       "title": "BPT geometric commuting-projector tradeoff",
       "domain": "Bounds",
-      "lean_module": "QEC.Bounds.GeometricLocalityTradeoff.GeometricTradeoff",
+      "lean_module": "QEC.Results.LocalityBounds.GeometricTradeoff",
       "lean_declaration": "QEC.Bounds.BPTCommutingProjectorModel.bpt_geometric_locality_tradeoff",
-      "lean_source": "QEC/Bounds/GeometricLocalityTradeoff/GeometricTradeoff.lean",
+      "lean_source": "QEC/Results/LocalityBounds/GeometricTradeoff.lean",
       "documentation_route": "theorems/bpt-geometric-locality-tradeoff/",
       "citation_keys": [
         "BPT10"
@@ -377,9 +377,9 @@
       "id": "ngu24-binary-transversal-ccz",
       "title": "Ngu24 binary CSS family with transversal CCZ",
       "domain": "Distillation",
-      "lean_module": "QEC.Distillation.MultiplicativeQuditProtocol.BinaryFamily",
+      "lean_module": "QEC.Results.Distillation.TransversalCCZFamily",
       "lean_declaration": "QEC.Distillation.Ngu24Binary.transversal_ccz_good_code",
-      "lean_source": "QEC/Distillation/MultiplicativeQuditProtocol/BinaryFamily.lean",
+      "lean_source": "QEC/Results/Distillation/TransversalCCZFamily.lean",
       "documentation_route": "theorems/ngu24-binary-transversal-ccz/",
       "citation_keys": [
         "Ngu24",
@@ -393,9 +393,9 @@
       "id": "kt19-qudit-vanishing-overhead-exponent",
       "title": "KT19 prime-qudit distillation with a vanishing exponent",
       "domain": "Distillation",
-      "lean_module": "QEC.Distillation.PrimeQuditProtocol.VanishingOverhead",
+      "lean_module": "QEC.Results.Distillation.PrimeQuditOverhead",
       "lean_declaration": "QEC.Distillation.KT19VanishingOverhead.kt19_qudit_zero_exponent",
-      "lean_source": "QEC/Distillation/PrimeQuditProtocol/VanishingOverhead.lean",
+      "lean_source": "QEC/Results/Distillation/PrimeQuditOverhead.lean",
       "documentation_route": "theorems/kt19-qudit-vanishing-overhead-exponent/",
       "citation_keys": [
         "KT19"
@@ -405,9 +405,9 @@
       "id": "bk05-magic-state-fidelity-thresholds",
       "title": "BK05 magic-state fidelity thresholds imply universality",
       "domain": "Distillation",
-      "lean_module": "QEC.Distillation.MagicStateThreshold.Universality",
+      "lean_module": "QEC.Results.Distillation.MagicStateThreshold",
       "lean_declaration": "QEC.Distillation.bk05_magicState_fidelity_thresholds_imply_universality",
-      "lean_source": "QEC/Distillation/MagicStateThreshold/Universality.lean",
+      "lean_source": "QEC/Results/Distillation/MagicStateThreshold.lean",
       "documentation_route": "theorems/bk05-magic-state-fidelity-thresholds/",
       "citation_keys": [
         "BK05"
@@ -417,9 +417,9 @@
       "id": "bh12-triorthogonal-code-distillation",
       "title": "BH12 triorthogonal-code distillation family",
       "domain": "Distillation",
-      "lean_module": "QEC.Distillation.Triorthogonal.Concatenation",
+      "lean_module": "QEC.Results.Distillation.TriorthogonalDistillation",
       "lean_declaration": "QEC.Distillation.Triorthogonal.BH12Concatenation.bh12TriorthogonalCodeDistillation",
-      "lean_source": "QEC/Distillation/Triorthogonal/Concatenation.lean",
+      "lean_source": "QEC/Results/Distillation/TriorthogonalDistillation.lean",
       "documentation_route": "theorems/bh12-triorthogonal-code-distillation/",
       "citation_keys": [
         "BH12"
@@ -429,9 +429,9 @@
       "id": "hh18-sublogarithmic-distillation",
       "title": "HH18 sublogarithmic magic-state distillation",
       "domain": "Distillation",
-      "lean_module": "QEC.Distillation.LowOverheadProtocol.Sublogarithmic.Distillation",
+      "lean_module": "QEC.Results.Distillation.SublogarithmicOverhead",
       "lean_declaration": "QEC.Distillation.HH18.hh18_sublogarithmic_distillation_overhead",
-      "lean_source": "QEC/Distillation/LowOverheadProtocol/Sublogarithmic/Distillation.lean",
+      "lean_source": "QEC/Results/Distillation/SublogarithmicOverhead.lean",
       "documentation_route": "theorems/hh18-sublogarithmic-distillation/",
       "citation_keys": [
         "HH18"
@@ -441,9 +441,9 @@
       "id": "why24-constant-overhead-distillation",
       "title": "WHY24 constant-overhead CCZ distillation",
       "domain": "Distillation",
-      "lean_module": "QEC.Distillation.ConstantOverheadProtocol.ConstantOverhead",
+      "lean_module": "QEC.Results.Distillation.ConstantOverhead",
       "lean_declaration": "QEC.Distillation.Why24ConstantOverhead.why24_constant_overhead_distillation",
-      "lean_source": "QEC/Distillation/ConstantOverheadProtocol/ConstantOverhead.lean",
+      "lean_source": "QEC/Results/Distillation/ConstantOverhead.lean",
       "documentation_route": "theorems/why24-constant-overhead-distillation/",
       "citation_keys": [
         "WHY24",

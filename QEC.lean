@@ -2,6 +2,7 @@ import QEC.Bounds
 import QEC.Coding
 import QEC.Distillation
 import QEC.Locality
+import QEC.Results
 import QEC.Semantics
 /-!
 # Lean-QEC

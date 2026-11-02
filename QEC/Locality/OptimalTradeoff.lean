@@ -1,5 +1,4 @@
 import QEC.Locality.OptimalTradeoff.BadSquareSubdivision
-import QEC.Locality.OptimalTradeoff.Bound
 import QEC.Locality.OptimalTradeoff.CorrectablePartition
 import QEC.Locality.OptimalTradeoff.CountComposition
 import QEC.Locality.OptimalTradeoff.DistancePartition

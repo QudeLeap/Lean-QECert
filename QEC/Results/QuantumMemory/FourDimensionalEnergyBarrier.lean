@@ -24,20 +24,6 @@ open PauliSymplectic StabilizerCode.LocalStabilizerHamiltonian
 
 variable {L : Nat} [NeZero L] [Fact (1 < L)]
 
-/-- The explicit primal sweep ends in the corresponding nontrivial membrane
-sector used by the lower-bound theorem. -/
-theorem primalMembraneSweepPath_hasPrimalMembraneEndpoint (z w : ZMod L) :
-    HasPrimalMembraneEndpoint (primalMembraneSweepPath z w) := by
-  refine ⟨z, w, 0, ?_⟩
-  simp [primalMembraneError]
-
-/-- The explicit dual sweep ends in the corresponding nontrivial membrane
-sector used by the lower-bound theorem. -/
-theorem dualMembraneSweepPath_hasDualMembraneEndpoint (x y : ZMod L) :
-    HasDualMembraneEndpoint (dualMembraneSweepPath x y) := by
-  refine ⟨x, y, 0, ?_⟩
-  simp [dualMembraneError]
-
 /--
 Finite `Theta(L)` energy-barrier bounds for every nonzero primal and dual
 coordinate-membrane sector of the periodic four-dimensional toric code.

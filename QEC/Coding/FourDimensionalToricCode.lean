@@ -1,6 +1,4 @@
-import QEC.Coding.FourDimensionalToricCode.AlternatingStripDistance
 import QEC.Coding.FourDimensionalToricCode.Cellulation
-import QEC.Coding.FourDimensionalToricCode.ConstantEnergyBarrier
 import QEC.Coding.FourDimensionalToricCode.CoordinateSymmetry
 import QEC.Coding.FourDimensionalToricCode.Decoder.Assembly
 import QEC.Coding.FourDimensionalToricCode.Decoder.LevelTwoHistory
@@ -12,8 +10,6 @@ import QEC.Coding.FourDimensionalToricCode.Decoder.RXLocalCleaning
 import QEC.Coding.FourDimensionalToricCode.Decoder.RZCoarseGraining
 import QEC.Coding.FourDimensionalToricCode.EnergyBarrierLowerBound
 import QEC.Coding.FourDimensionalToricCode.Hamiltonian
-import QEC.Coding.FourDimensionalToricCode.LinearEnergyBarrier
 import QEC.Coding.FourDimensionalToricCode.LogicalSectors
 import QEC.Coding.FourDimensionalToricCode.MembraneSweep
 import QEC.Coding.FourDimensionalToricCode.MembraneSyndrome
-import QEC.Coding.FourDimensionalToricCode.StripLogicalPath

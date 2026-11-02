@@ -16,4 +16,3 @@ import QEC.Coding.HypergraphProduct.Distance.UpperBound
 import QEC.Coding.HypergraphProduct.Distance.Witness
 import QEC.Coding.HypergraphProduct.Locality
 import QEC.Coding.HypergraphProduct.Parameters
-import QEC.Coding.HypergraphProduct.ParametersTheorem
