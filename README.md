@@ -1,6 +1,7 @@
 # Lean-QECert
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2611.05047"><img src="https://img.shields.io/badge/arXiv-2611.05047-b31b1b.svg" alt="arXiv:2611.05047"></a>
   <a href="https://github.com/leanprover/lean4/releases/tag/v4.33.1"><img src="https://img.shields.io/badge/Lean-v4.33.1-6C5CE7" alt="Lean v4.33.1"></a>
   <a href="https://github.com/leanprover-community/mathlib4/releases/tag/v4.33.1"><img src="https://img.shields.io/badge/mathlib-v4.33.1-0087BD" alt="mathlib v4.33.1"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache License 2.0"></a>
@@ -125,6 +126,21 @@ foundational topics with these projects, with an emphasis on mathematical
 results and their prerequisite chains.
 
 ## Citation
+
+If you use Lean-QECert in your research, please cite our paper,
+[QECert: Formal Foundations for Quantum Error-Correction Theory in Lean](https://arxiv.org/abs/2611.05047):
+
+```bibtex
+@misc{he2026qecert,
+  title         = {{QECert}: Formal Foundations for Quantum Error-Correction Theory in {Lean}},
+  author        = {Keming He and Jiahan Chen and Enji Xiong and Zhongyi Ni and Lei Zhang and Xin Wang},
+  year          = {2026},
+  eprint        = {2611.05047},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph},
+  url           = {https://arxiv.org/abs/2611.05047}
+}
+```
 
 Please cite the original mathematical sources for the results you use, as well
 as Lean-QECert. Citation keys in the Lean source refer to [REFERENCES.json](REFERENCES.json).
